@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Spark / Java runtime junk
+derby.log
+metastore_db/
+spark-warehouse/
+*.log
+
+# Generated demo output (recreate with examples/run_medicare_checks.py)
+reports/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp

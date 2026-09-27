@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sparkdq-medicare"
+version = "0.1.0"
+description = "PySpark data-quality checker with built-in profiles for the CMS Medicare Part A/B (DE-SynPUF) claims data"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Hemant" }]
+dependencies = [
+    "pyspark>=3.4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
